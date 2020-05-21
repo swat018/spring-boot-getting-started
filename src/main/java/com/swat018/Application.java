@@ -16,12 +16,4 @@ public class Application {
 //        SpringApplication.run(Application.class, args);
     }
 
-   @Bean
-    public Holoman holoman1() {
-        Holoman holoman = new Holoman();
-        holoman.setName("jinwoo");
-        holoman.setHowLong(60);
-        return holoman;
-    }
-
 }
