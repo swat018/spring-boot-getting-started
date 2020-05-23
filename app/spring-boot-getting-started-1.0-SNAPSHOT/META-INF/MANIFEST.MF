@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven 3.6.3
+Built-By: jinwoopark
+Build-Jdk: 13.0.2
+Implementation-Title: spring-boot-getting-started
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: com.swat018
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/spring-boot-getting-started
+Main-Class: org.springframework.boot.loader.JarLauncher
+Start-Class: com.swat018.Application
+Spring-Boot-Version: 2.0.3.RELEASE
+Spring-Boot-Classes: BOOT-INF/classes/
+Spring-Boot-Lib: BOOT-INF/lib/
+
