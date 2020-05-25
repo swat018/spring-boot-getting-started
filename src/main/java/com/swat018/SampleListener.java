@@ -25,7 +25,7 @@ public class SampleListener implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        System.out.println("foo: " + args.containsOption("foo"));
-        System.out.println("bar: " + args.containsOption("bar"));
+/*        System.out.println("foo: " + args.containsOption("foo"));
+        System.out.println("bar: " + args.containsOption("bar"));*/
     }
 }
