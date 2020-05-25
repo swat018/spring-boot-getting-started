@@ -2,6 +2,7 @@ package com.swat018;
 
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.core.env.Environment;
@@ -15,17 +16,19 @@ import java.io.PrintStream;
 public class Application {
 
     public static void main(String[] args) {
-//        SpringApplication app = new SpringApplication(Application.class);
+        SpringApplication app = new SpringApplication(Application.class);
 /*        app.setBanner((environment, sourceClass, out) -> {
             out.println("==================");
             out.println("swat018");
             out.println("==================");
         })*/;
 //        app.setBannerMode(Banner.Mode.OFF);
-        new SpringApplicationBuilder()
+/*        new SpringApplicationBuilder()
                 .sources(Application.class)
-                .run(args);
-//        app.run(args);
+                .run(args);*/
+//        app.addListeners(new SampleListener());
+        app.setWebApplicationType(WebApplicationType.NONE);
+        app.run(args);
 //        SpringApplication.run(Application.class, args);
     }
 
