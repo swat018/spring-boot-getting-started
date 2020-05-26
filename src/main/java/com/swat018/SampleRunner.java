@@ -19,12 +19,17 @@ public class SampleRunner implements ApplicationRunner {
     @Autowired
     JinwooProperties jinwooProperties;
 
+    @Autowired
+    private String hello;
+
     @Override
     public void run(ApplicationArguments args) throws Exception {
         System.out.println("============================");
+        System.out.println(hello);
         System.out.println(jinwooProperties.getName());
-        System.out.println(jinwooProperties.getAge());
-        System.out.println(jinwooProperties.getSessionTimeout());
+        System.out.println(jinwooProperties.getFullName());
+/*        System.out.println(jinwooProperties.getAge());
+        System.out.println(jinwooProperties.getSessionTimeout());*/
         System.out.println("============================");
     }
 }

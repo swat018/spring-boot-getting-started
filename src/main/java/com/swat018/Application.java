@@ -19,11 +19,11 @@ import java.io.PrintStream;
 @RestController
 public class Application {
 
-    @ConfigurationProperties("server")
+/*    @ConfigurationProperties("server")
     @Bean
     public ServerProperties serverProperties() {
         return new ServerProperties();
-    }
+    }*/
 
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(Application.class);
